@@ -31,6 +31,12 @@
 .mb2 {
   margin-bottom: 2px !important;
 }
+.padding-md {
+  padding: 180px 0 150px;
+}
+.padding-lg {
+  padding: 280px 0 150px;
+}
 /** Vendor **/
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -52,9 +58,7 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -176,8 +180,7 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 .fa-stack {
   position: relative;
@@ -2762,9 +2765,7 @@ nav.navbar .main-logo {
   top: 50%;
   left: 50%;
   z-index: 9999;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .navbar-nav a {
   color: #ffffff;
@@ -2780,8 +2781,7 @@ nav.navbar .main-logo {
 }
 .navbar-nav li a {
   color: #ffffff;
-  -webkit-transition: color 0.8s;
-          transition: color 0.8s;
+  transition: color 0.8s;
 }
 .navbar-nav li a:hover {
   color: #ed5452;
@@ -2830,8 +2830,7 @@ nav.navbar .main-logo {
 .t-header-bottom,
 .navbar,
 .logo {
-  -webkit-transition: all 0.4s;
-          transition: all 0.4s;
+  transition: all 0.4s;
 }
 .t-footer {
   margin: 0;
@@ -2946,8 +2945,7 @@ nav.navbar .main-logo {
   padding: 10px 15px;
   border-radius: 50%;
   border: 2px solid #ffffff;
-  -webkit-transition: all 0.8s;
-          transition: all 0.8s;
+  transition: all 0.8s;
 }
 .social li a:hover {
   color: #ed5452;
@@ -2971,9 +2969,7 @@ nav.navbar .main-logo {
   position: absolute;
   top: 60%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .carousel-indicators {
   left: 50%;
@@ -3047,8 +3043,7 @@ nav.navbar .main-logo {
   padding-bottom: 15px;
   border: 2px solid #ed5452;
   color: #ffffff;
-  -webkit-transition: all 0.8s;
-          transition: all 0.8s;
+  transition: all 0.8s;
 }
 .btn-booking-form:hover {
   color: #ffffff;
@@ -3067,8 +3062,7 @@ nav.navbar .main-logo {
 }
 .content-heading {
   background-color: #272727;
-  -webkit-transition: all 0.8s;
-          transition: all 0.8s;
+  transition: all 0.8s;
 }
 .content-heading .heading {
   text-align: center;
@@ -3085,8 +3079,7 @@ nav.navbar .main-logo {
 .content-column {
   background-color: #f8f8f8;
   padding: 50px;
-  -webkit-transition: all 0.8s;
-          transition: all 0.8s;
+  transition: all 0.8s;
 }
 .content-column .column-heading {
   font-size: 1.75em;
@@ -3104,8 +3097,7 @@ nav.navbar .main-logo {
   font-size: 0.875em;
   font-weight: bold;
   padding: 15px 30px;
-  -webkit-transition: all 0.8s;
-          transition: all 0.8s;
+  transition: all 0.8s;
 }
 .content:hover {
   cursor: pointer;
@@ -3134,4 +3126,109 @@ nav.navbar .main-logo {
   font-size: 1.5em;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
+}
+/* ABOUT
+----------*/
+.content-page {
+  font-size: 17px;
+  color: #4f4f4f;
+  line-height: 30px;
+}
+.page-title {
+  margin-bottom: 70px;
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 32.56px;
+  color: #272727;
+  text-transform: uppercase;
+}
+.content-logo {
+  margin-bottom: 35px;
+}
+.content-about .blockqoute {
+  margin-bottom: 70px;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 37px;
+}
+.content-about > p {
+  margin-bottom: 70px;
+}
+.content-about > p:last-child {
+  margin-bottom: 0;
+}
+/* CONTACT
+-----------*/
+.content-contact .page-title {
+  margin-top: 60px;
+}
+.form-contact label {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #272727;
+  text-transform: uppercase;
+}
+.form-contact .form-control {
+  height: 50px;
+  border: 2px solid #272727;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form-contact textarea.form-control {
+  height: 160px;
+}
+.form-contact .btn {
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  background: #272727;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-details > li {
+  margin-bottom: 20px;
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #272727;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+.contact-details > li > span {
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  color: #4f4f4f;
+  text-transform: none;
+}
+/* LOCATION
+-------------*/
+.content-location {
+  padding-bottom: 70px;
+}
+.content-location .heading {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.content-location .heading .title {
+  font-size: 24.76px;
+  color: #272727;
+}
+.content-location .heading .subtitle {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.content-location .heading .description {
+  text-transform: none;
+}
+.content-location .map iframe {
+  border: 4px solid #272727 !important;
+}
+.content-location .reservation-box {
+  margin-top: 100px;
+}
+.content-location .reservation-box .phone {
+  font-size: 36px;
+  color: #272727;
 }

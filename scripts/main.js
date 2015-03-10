@@ -8,6 +8,7 @@
 				this.layout();
 				this.headerResize();
 			},
+
 			datePicker: function() {
 				$('#booking-arrival').datepicker();
 				$('#booking-departure').datepicker();
@@ -31,6 +32,7 @@
 	            $(document).ready(callback);
 	            $(window).resize(callback);
         	},
+
         	headerResize: function() {
         		function headResize() {
         		  var scrollSize = $(window).scrollTop(),
@@ -53,5 +55,6 @@
 
 		}
 	};
+	
 	util.global.init();
 })($);
