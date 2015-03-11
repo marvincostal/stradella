@@ -31,6 +31,9 @@
 .mb2 {
   margin-bottom: 2px !important;
 }
+.padding-sm {
+  padding: 100px 0;
+}
 .padding-md {
   padding: 180px 0 150px;
 }
@@ -2840,7 +2843,7 @@ nav.navbar .main-logo {
   font-size: 1em;
   text-align: center;
   color: #ababab;
-  padding-top: 70px;
+  padding-top: 0;
   text-transform: uppercase;
   font-weight: light;
 }
@@ -3127,8 +3130,6 @@ nav.navbar .main-logo {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-/* ABOUT
-----------*/
 .content-page {
   font-size: 17px;
   color: #4f4f4f;
@@ -3146,7 +3147,7 @@ nav.navbar .main-logo {
 }
 .content-about .blockqoute {
   margin-bottom: 70px;
-  font-family: Georgia;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 24px;
   line-height: 37px;
@@ -3157,8 +3158,6 @@ nav.navbar .main-logo {
 .content-about > p:last-child {
   margin-bottom: 0;
 }
-/* CONTACT
------------*/
 .content-contact .page-title {
   margin-top: 60px;
 }
@@ -3202,8 +3201,6 @@ nav.navbar .main-logo {
   color: #4f4f4f;
   text-transform: none;
 }
-/* LOCATION
--------------*/
 .content-location {
   padding-bottom: 70px;
 }
@@ -3231,4 +3228,17 @@ nav.navbar .main-logo {
 .content-location .reservation-box .phone {
   font-size: 36px;
   color: #272727;
+}
+.gallery-item {
+  margin-bottom: 30px;
+}
+.banner {
+  position: relative;
+  min-height: 404px;
+  margin-top: 180px;
+  background: url(../img/banner.jpg) center no-repeat;
+  background-size: cover;
+}
+.promo-item {
+  margin-bottom: 30px;
 }
