@@ -1,3 +1,25 @@
 .gallery-item {
+	position: relative;
 	margin-bottom: 30px;
+	cursor: pointer;
+
+	.img-holder {
+		border: 5px solid transparent;
+		overflow: hidden;
+		transition: all .3s ease-in-out;
+
+		img {
+			transition: all 1s ease-in-out;
+		}
+	}
+
+	&:hover {
+		.img-holder {
+			border: 5px solid #363535;
+
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
 }

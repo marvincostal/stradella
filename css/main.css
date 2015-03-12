@@ -19,6 +19,37 @@
   margin: 0 auto;
   padding: 0;
 }
+.content-page {
+  font-size: 17px;
+  color: #4f4f4f;
+  line-height: 30px;
+}
+.page-title {
+  margin-bottom: 70px;
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 32.56px;
+  color: #272727;
+  text-transform: uppercase;
+}
+.page-title span {
+  font-size: 45px;
+}
+.btn-white {
+  margin-top: 50px;
+  border: 2px solid #363535;
+  border-radius: 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #363535;
+  font-size: 0.875em;
+  font-weight: bold;
+  padding: 15px 30px;
+  transition: all .5s;
+}
+.btn-white:hover {
+  background-color: #363535;
+  color: #fff;
+}
 .padt2 {
   padding-top: 2px !important;
 }
@@ -3130,17 +3161,128 @@ nav.navbar .main-logo {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-.content-page {
-  font-size: 17px;
-  color: #4f4f4f;
-  line-height: 30px;
+.banner {
+  position: relative;
+  min-height: 404px;
+  margin-top: 180px;
+  background: url(../img/banner.jpg) center no-repeat;
+  background-size: cover;
 }
-.page-title {
-  margin-bottom: 70px;
+.banner .banner-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.banner .banner-content .banner-title {
+  margin-bottom: 20px;
   font-family: 'ProximaNovaSemibold', Arial, sans-serif;
   font-size: 32.56px;
+  text-transform: uppercase;
+}
+.banner .banner-content .banner-title span {
+  font-size: 45px;
+}
+.banner .banner-content p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 37px;
+}
+.room-item {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.room-item .img-holder {
+  position: relative;
+  border: 2px solid #d6d6d6;
+  transition: all 0.3s ease-in-out;
+}
+.room-item .img-holder:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.room-item .img-holder .details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.room-item .img-holder .details p {
+  margin-top: 10px;
+}
+.room-item:hover .img-holder {
+  border: 2px solid #5b5b5b;
+}
+.room-item:hover .img-holder:after,
+.room-item:hover .img-holder .details {
+  opacity: 1;
+}
+.room-item .caption h3 {
+  font-size: 22.56px;
   color: #272727;
   text-transform: uppercase;
+}
+.room-item .caption h3 span {
+  margin-right: 15px;
+}
+.promo-item {
+  margin-bottom: 30px;
+  border: 1px solid #d6d6d6;
+  border-radius: 7px;
+}
+.promo-item .img-holder img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.promo-item .details {
+  padding: 30px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background: #f8f8f8;
+}
+.promo-item .details h3 {
+  margin-top: 0;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.promo-item .details p {
+  font-size: 14px;
+}
+.promo-item .details .btn-white {
+  margin-top: 20px;
+}
+.gallery-item {
+  position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.gallery-item .img-holder {
+  border: 5px solid transparent;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-item .img-holder img {
+  transition: all 1s ease-in-out;
+}
+.gallery-item:hover .img-holder {
+  border: 5px solid #363535;
+}
+.gallery-item:hover .img-holder img {
+  transform: scale(1.1);
 }
 .content-logo {
   margin-bottom: 35px;
@@ -3229,16 +3371,18 @@ nav.navbar .main-logo {
   font-size: 36px;
   color: #272727;
 }
-.gallery-item {
-  margin-bottom: 30px;
+@media (max-width: 767px) {
+  .promos .img-holder img {
+    width: 100%;
+  }
 }
-.banner {
-  position: relative;
-  min-height: 404px;
-  margin-top: 180px;
-  background: url(../img/banner.jpg) center no-repeat;
-  background-size: cover;
-}
-.promo-item {
-  margin-bottom: 30px;
+@media (max-width: 480px) {
+  .rooms .col-xs-6,
+  .gallery .col-xs-6 {
+    width: 100%;
+  }
+  .rooms .img-holder img,
+  .gallery .img-holder img {
+    width: 100%;
+  }
 }
