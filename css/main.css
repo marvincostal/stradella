@@ -24,6 +24,13 @@
   color: #4f4f4f;
   line-height: 30px;
 }
+.content-page .blockqoute {
+  margin-bottom: 70px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 37px;
+}
 .page-title {
   margin-bottom: 70px;
   font-family: 'ProximaNovaSemibold', Arial, sans-serif;
@@ -70,6 +77,9 @@
 }
 .padding-lg {
   padding: 280px 0 150px;
+}
+.bg-lightgray {
+  background: #f8f8f8;
 }
 /** Vendor **/
 /*!
@@ -3287,18 +3297,38 @@ nav.navbar .main-logo {
 .content-logo {
   margin-bottom: 35px;
 }
-.content-about .blockqoute {
-  margin-bottom: 70px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: 24px;
-  line-height: 37px;
-}
 .content-about > p {
   margin-bottom: 70px;
 }
 .content-about > p:last-child {
   margin-bottom: 0;
+}
+.featured .img-holder {
+  border: 3px solid #272727;
+}
+.featured .img-holder img {
+  width: 100%;
+}
+.featured .details h3 {
+  font-size: 30px;
+  color: #272727;
+}
+.section-menu h2 {
+  margin: 60px 0;
+  font-size: 30px;
+  color: #272727;
+}
+.best-menu .img-holder {
+  border: 3px solid #272727;
+}
+.best-menu .img-holder img {
+  width: 100%;
+}
+.best-menu .row .col-md-5 {
+  padding-right: 0;
+}
+.best-menu .row .col-md-7 {
+  padding-left: 0;
 }
 .content-contact .page-title {
   margin-top: 60px;
@@ -3364,12 +3394,20 @@ nav.navbar .main-logo {
 .content-location .map iframe {
   border: 4px solid #272727 !important;
 }
-.content-location .reservation-box {
+.reservation-box {
   margin-top: 100px;
 }
-.content-location .reservation-box .phone {
+.reservation-box .phone {
   font-size: 36px;
   color: #272727;
+}
+@media (max-width: 991px) {
+  .best-menu .row .col-md-5 {
+    padding-right: 15px;
+  }
+  .best-menu .row .col-md-7 {
+    padding-left: 15px;
+  }
 }
 @media (max-width: 767px) {
   .promos .img-holder img {
