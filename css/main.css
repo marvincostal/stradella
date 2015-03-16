@@ -57,6 +57,29 @@
   background-color: #363535;
   color: #fff;
 }
+.btn-book {
+  border: 2px solid #272727;
+  background-color: #ffffff;
+  padding: 10px 40px;
+  margin-top: 10px;
+  transition: all .5s;
+}
+.btn-book a {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 14px;
+  color: #272727;
+  text-transform: uppercase;
+}
+.btn-book:hover {
+  background-color: #272727;
+}
+.btn-book:hover a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.bg-whiteflesh {
+  background-color: #f8f8f8;
+}
 .padt2 {
   padding-top: 2px !important;
 }
@@ -65,6 +88,9 @@
 }
 .padt10 {
   padding-top: 10px !important;
+}
+.padt30 {
+  padding-top: 30px !important;
 }
 .mb2 {
   margin-bottom: 2px !important;
@@ -3249,6 +3275,85 @@ nav.navbar .main-logo {
 .room-item .caption h3 span {
   margin-right: 15px;
 }
+.room-title {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #272727;
+}
+.room-container {
+  margin-top: 60px;
+}
+.room-container .room-detail-container {
+  margin-left: 20px;
+  text-align: left;
+}
+.room-container .room-tab-title {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #d6d6d6;
+  text-transform: uppercase;
+}
+.room-navtabs li a {
+  border-radius: 0;
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d6d6d6 !important;
+  text-transform: uppercase;
+  border: 1px solid #e6e6e6 !important;
+  border-bottom: 1px solid transparent !important;
+  margin: 0 -1px -1px 0;
+  padding: 15px 30px;
+  background-color: #ffffff;
+}
+.room-navtabs .active a {
+  font-size: 18px;
+  color: #272727 !important;
+  margin: 0;
+}
+.room-tab-content {
+  border: 1px solid #e6e6e6;
+  border-top: transparent;
+  padding: 0 20px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+.room-tab-content .room-tabpane {
+  padding: 20px 0;
+  text-align: left;
+}
+.room-tab-content .room-tabpane h3 {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #272727;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.room-tab-content .room-tabpane p {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 16px;
+  color: #4f4f4f;
+}
+.footer-reservation {
+  text-align: center;
+  margin-top: 7em;
+}
+.footer-reservation h3,
+.footer-reservation h2 {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.footer-reservation h3 {
+  font-size: 20px;
+  color: #ababab;
+}
+.footer-reservation h2 {
+  font-size: 36px;
+  color: #363535;
+}
 .promo-item {
   margin-bottom: 30px;
   border: 1px solid #d6d6d6;
@@ -3274,6 +3379,50 @@ nav.navbar .main-logo {
 }
 .promo-item .details .btn-white {
   margin-top: 20px;
+}
+.promo-img {
+  overflow: hidden;
+  border: 1px solid #272727;
+  border: 3px solid #272727;
+}
+.promo-img img {
+  width: 100%;
+}
+.promo-detail-container {
+  margin-left: 20px;
+}
+.promo-detail-container .promo-details {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 16px;
+  color: #4f4f4f;
+  line-height: 25px;
+  width: 90%;
+}
+.promo-detail-container .promo-title {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 18px;
+  color: #272727;
+  text-transform: uppercase;
+}
+.promo-detail-container .email-title {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #272727;
+  margin: 30px 0 10px 0;
+}
+.promo-detail-container .email-add {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 15px;
+  color: #4f4f4f;
+  margin-bottom: -10px;
+}
+.promo-detail-container .contact-details {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 18px;
+  color: #272727;
+  margin: 30px 0;
 }
 .gallery-item {
   position: relative;
@@ -3423,4 +3572,36 @@ nav.navbar .main-logo {
   .gallery .img-holder img {
     width: 100%;
   }
+}
+.availability-container {
+  margin-bottom: 35px;
+}
+.availability-details-container {
+  text-align: left;
+  margin-left: 15px;
+}
+.availability-title {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #272727;
+  text-transform: uppercase;
+}
+.availability-desc {
+  font-family: 'ProximaNovaSemibold', Arial, sans-serif;
+  font-size: 16px;
+  color: #4f4f4f;
+  width: 75%;
+  line-height: 25px;
+}
+.availabilty-policy {
+  font-size: 15px;
+}
+.rate-title {
+  font-size: 18px;
+  color: #cb5152;
+  margin-bottom: 0;
+}
+.rate-desc {
+  font-size: 14px;
 }
