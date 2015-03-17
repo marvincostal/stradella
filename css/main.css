@@ -3680,6 +3680,15 @@ nav.navbar .main-logo {
     float: none;
     text-align: center;
   }
+  .details {
+    text-align: justify;
+  }
+  .details h3 {
+    text-align: center;
+  }
+  .padding-sm {
+    padding: 50px 0;
+  }
 }
 @media (max-width: 900px) {
   .booking-form-field input {
@@ -3810,7 +3819,7 @@ nav.navbar .main-logo {
     width: 38%;
     margin-top: 10px;
   }
-  .booking-container {
+  .display-inherit {
     position: inherit;
   }
   .carousel-inner .carousel-subtitle img {
@@ -3839,6 +3848,9 @@ nav.navbar .main-logo {
   .rooms .img-holder img,
   .gallery .img-holder img {
     width: 100%;
+  }
+  .reservation-box .phone {
+    font-size: 30px;
   }
 }
 .availability-container {
