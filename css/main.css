@@ -3237,7 +3237,7 @@ nav.navbar .main-logo {
 .banner {
   position: relative;
   min-height: 404px;
-  margin-top: 180px;
+  margin-top: 155px;
   background: url(../img/banner.jpg) center no-repeat;
   background-size: cover;
 }
@@ -3673,6 +3673,13 @@ nav.navbar .main-logo {
     width: 100%;
     text-align: center;
   }
+  .t-footer-bottom .row div:nth-of-type(1n+2) {
+    height: auto;
+  }
+  .developer {
+    float: none;
+    text-align: center;
+  }
 }
 @media (max-width: 900px) {
   .booking-form-field input {
@@ -3789,10 +3796,6 @@ nav.navbar .main-logo {
   }
   .logo.logo-footer {
     padding: 0 !important;
-  }
-  .developer {
-    float: none;
-    text-align: center;
   }
 }
 @media (max-width: 600px) {
