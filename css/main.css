@@ -2864,9 +2864,6 @@ nav.navbar .main-logo {
   color: #ed5452;
   background-color: #272727;
 }
-.navbar-nav li a:active {
-  background-color: #363535;
-}
 .logo {
   display: inline-block;
   background-color: #272727;
@@ -3495,6 +3492,7 @@ nav.navbar .main-logo {
 .blueimp-gallery > .prev,
 .blueimp-gallery > .next {
   background: transparent !important ;
+  border: 3px solid transparent !important ;
 }
 .blueimp-gallery > .close,
 .blueimp-gallery > .title {
