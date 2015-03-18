@@ -3483,7 +3483,7 @@ nav.navbar .main-logo {
 .blueimp-gallery {
   background: rgba(255, 255, 255, 0.8) !important;
 }
-.slide img {
+.slides .slide img {
   border: 5px solid #363535 !important ;
 }
 .blueimp-gallery > .prev,

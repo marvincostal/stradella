@@ -90,7 +90,6 @@
       
       <div id="blueimp-gallery" class="blueimp-gallery">
           <div class="slides"></div>
-          <h3 class="title"></h3>
           <a class="prev"><img src="img/arrow-left.png"></a>
           <a class="next"><img src="img/arrow-right.png"></a>
           <a class="close">×</a>
