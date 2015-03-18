@@ -12,6 +12,7 @@
       <link rel="apple-touch-icon" href="apple-touch-icon.png">
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/blueimp-gallery.min.css">
       <script src="scripts/modernizr-2.8.3.min.js"></script>
   </head>
   <body>

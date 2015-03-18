@@ -72,6 +72,7 @@
         <script src="scripts/bootstrap-datepicker.js"></script>
         <script src="scripts/bootstrap/tab.js"></script>
         <script src="scripts/main.js"></script>
+        <script src="scripts/blueimp-gallery.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -81,6 +82,28 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        
+        <!-- Galllery Lightbox -->
+        <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+        </script>
+
+        <script>
+        blueimp.Gallery(
+            document.getElementById('links').getElementsByTagName('a'),
+            {
+                container: '#blueimp-gallery-carousel',
+                carousel: true
+            }
+        );
         </script>
     </body>
 </html>
