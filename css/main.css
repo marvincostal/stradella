@@ -2874,6 +2874,10 @@ nav.navbar .main-logo {
   height: 180px;
   width: 180px;
   padding: 10px 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
 }
 .logo img {
   padding: 20px 5px;
@@ -3053,6 +3057,8 @@ nav.navbar .main-logo {
   padding: 30px 0!important;
   text-align: center;
   width: 100% !important;
+  position: inherit;
+  margin-top: 15px;
 }
 .carousel-inner .item > img {
   width: 100%;
