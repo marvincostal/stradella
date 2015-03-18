@@ -8,7 +8,7 @@
       </div>  
     </div>
 
-    <div class="booking-container">
+    <div class="booking-container ">
       <div class="container-lg">
           <form action="">
 
