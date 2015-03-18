@@ -101,7 +101,7 @@
   padding: 100px 0;
 }
 .padding-md {
-  padding: 180px 0 150px;
+  padding: 155px 0 150px;
 }
 .padding-lg {
   padding: 280px 0 150px;
@@ -2843,6 +2843,7 @@ nav.navbar .main-logo {
   left: 50%;
   z-index: 9999;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 .navbar-nav a {
   color: #ffffff;
@@ -2871,10 +2872,6 @@ nav.navbar .main-logo {
   height: 180px;
   width: 180px;
   padding: 10px 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
 }
 .logo img {
   padding: 20px 5px;
@@ -3656,6 +3653,9 @@ nav.navbar .main-logo {
   .banner {
     margin-top: 140px;
   }
+  .padding-md {
+    padding: 145px 0 150px;
+  }
 }
 @media (max-width: 950px) {
   .t-header-bottom .navbar-collapse .navbar-right li a,
@@ -3739,6 +3739,11 @@ nav.navbar .main-logo {
   }
   .booking-container {
     padding: 15px 10px;
+  }
+}
+@media (max-width: 860px) {
+  .padding-md {
+    padding: 125px 0 150px;
   }
 }
 @media (min-width: 768px) {
@@ -3858,6 +3863,9 @@ nav.navbar .main-logo {
   }
   .subscribe .btn-subscribe {
     margin-left: 0px;
+  }
+  .padding-md {
+    padding: 150px 0 150px;
   }
 }
 @media (max-width: 736px) {
